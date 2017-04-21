@@ -12,12 +12,11 @@ export interface PlanOrderItem {
   amount: number
 }
 
-export interface order {
+export interface PlanOrder {
   id: string,
   no: string,
   uid: string,
-  type: number,
-  pgid: string,
+  pgid?: string,
   qid: string,
   vid: string,
   vehicle: Vehicle,
@@ -31,20 +30,20 @@ export interface order {
   insured_id: string,
   owner: Person,
   insured: Person,
-  promotion: number,
+  promotion?: number,
   service_ratio: number,
   real_value: number,
-  recommend: string,
-  inviter: string,
-  drivers: Person[],
+  recommend?: string,
+  inviter?: string,
+  drivers?: Person[],
   items: PlanOrderItem[],
   expect_at: Date,
-  start_at: Date,
-  stop_at: Date,
+  start_at?: Date,
+  stop_at?: Date,
   paid_at: Date,
   created_at: Date,
   updated_at: Date,
   evtid: string,
-  driving_frontal_view: string,
-  driving_rear_view: string
+  driving_frontal_view?: string,
+  driving_rear_view?: string
 };
