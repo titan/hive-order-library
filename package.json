@@ -1,0 +1,23 @@
+{
+  "name": "quotation-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.fengchaohuzhu.com:10022/server/quotation-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "person-library": "git+ssh://git@git.fengchaohuzhu.com:10022/server/person-library.git",
+    "plan-library": "git+ssh://git@git.fengchaohuzhu.com:10022/server/plan-library.git",
+    "vehicle-library": "git+ssh://git@git.fengchaohuzhu.com:10022/server/vehicle-library.git",
+    "quotation-library": "git+ssh://git@git.fengchaohuzhu.com:10022/server/quotation-library.git"
+  }
+}
